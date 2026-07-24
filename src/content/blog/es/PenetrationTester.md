@@ -92,34 +92,40 @@ Continuando con el contenido web esta el fuzzing con esta herramienta. Es una fo
 
 #### Login Brute Forcing
 
-Otra forma de "atacar" contraseñas que es probando una por una para iniciar sesión. No todos los protocolos tienen una protección contra la fuerza bruta lo cual puede ser abusable si la contraseña es débil. Un ejemplo simple de protocolo protegido es kerberos (directorio activo), a donde te equivoques varias veces de contraseña se bloquea el usuario. A diferencia de crackear un hash en local esto lleva más tiempo y se detecta fácilmente. Enseña a usar herramientas como Hydra y Medusa ademas de enseñar a hacer diccionarios personalizados.
+Otra forma de "atacar" contraseñas es probando una por una para iniciar sesión. No todos los protocolos y paginas tienen una protección contra la fuerza bruta lo cual puede ser abusable si la contraseña es débil. Un ejemplo simple de protocolo protegido es kerberos (directorio activo), a donde te equivoques varias veces de contraseña se bloquea el usuario. Ejemplos de paginas o protocolos vulnerables a fuerza bruta son FTP y Wordpress. A diferencia de crackear un hash en local esto lleva más tiempo y se detecta fácilmente. Enseña a usar herramientas como Hydra y Medusa ademas de enseñar a hacer diccionarios personalizados.
 
 #### SQL Injection Fundamentals
-Pendiente por comentar 
+Como lo dice el nombre del módulo enseña lo fundamental de inyección sql. Cuando el código no esta bien sanitizado se puede inyectar código y hacer cosas como ver el contenido de la base de datos. En el peor caso se puede lograr ejecutar comandos en el objetivo. 
+
+#### SQLMap Essentials
+Enseña a usar la herramienta sqlmap ante distintas situaciones. Esto es la automatización de lo enseñado el módulo anterior pero estas usando la herramienta sabiendo más o menos como funciona todo por detrás. Ataques más complejos como los blinds (los que no puedes ver la respuesta en texto claro) no los cubre el módulo anterior y se puede explotar con esta herramienta.
 
 #### Cross-Site Scriptying (XSS)
-Pendiente por comentar 
+Módulo que enseña XSS, sus tipos, como diferenciarlos y explotarlos. Es una vulnerabilidad que permite ejecutar JavaScript en el lado del cliente, no parece muy potente pero con un poco de ingenio y conocimiento puede ser una vulnerabilidad con mucho impacto. Cosas a destacar, este ataque es muy conocido por el robo de cookies aunque no se limita solo a eso, se puede intentar hacer lo mismo que en un SSRF porque es más potente que uno y no hay protección de SSRF que te salve de eso. Dentro del contenido enseñado se encuentra que puedes intentar hacer phishing utilizando la página original pero lo delata el link extremadamente largo
 
 #### File inclusion
-Pendiente por comentar 
+La explotación de una vulnerabilidad muy importante pudiendo acceder a archivos que no deberías o no preparados para la interacción con el usuario. Enseña un montón de información sobre el ataque en si y principalmente conocimiento de este en PHP (mucho contenido no es tan aplicable porque son para versiones muy viejas del mismo), entre ellos el log poisoning que si es algo muy bueno de conocer.
 
 #### File Upload Attacks
-Pendiente por comentar 
+Cuando subimos un archivo a una pagina a veces el archivo subido no es verificado adecuadamente y este modulo enseña a abusar de eso, pasar filtros que eviten que subamos un archivo malicioso y como explotarlo. También cubre un poco la denegación de servicio de una forma más teórica
 
 #### Command Injections
-Pendiente por comentar 
+Inyección de comandos, a diferencia de la inyección anterior esta es más peligrosa porque podes ejecutar comandos directamente en el objetivo. El contenido del módulo enseña a como explotarla principalmente mediante la via web. Incluye como a pasar filtros que eviten ejecutar comandos.
 
 #### Web attacks
-Pendiente por comentar 
+Un módulo clave en lo que viene a ser contenido de ataques webs, este enseña varios ataques distintos, los cuales son HTTP Verb Tampering, IDOR y XXE. HTTP Verb Tampering trata de que las páginas no siempre están configuradas correctamente las peticiones webs y cambiar el método puede ocasionar una situación no planeada por el programador para abusar de ella. El IDOR es cuando los recursos están con un patrón el cual puede llegar a ser reconocible por el usuario como puede ser una serie de números y cambiando los números puedas acceder a otros recursos que no deberías. XXE este va de explorar XML con datos que da el usuario, se puede llegar a obtener información de archivos del sistema.
+
+#### Attacking Common Applications
+Muy enfocado en ataques a aplicaciones (principalmente web) que de técnicas. Ataques a CMS como pueden ser Wordpress, Joomla y Drupal. Otras apps como Tomcat, Jenkins, Splunk, PRTG Network Monitor, Gitlab. Abusar del CGI. Atacar aplicaciones a través del cliente y más contenido. Un módulo que te prepara para explotar diversas applciaciones y conocerlas mas en profundidad.
 
 #### Linux Privilege Escalation
-Pendiente por comentar 
+Escalar privilegios un paso importante para comprometer todo el sistema o red, pasar de ser un usuario normal a uno importante o el más privilegiado (root en linux). Enseña a como escalar privilegios de diversas formas en linux, como privilegios de ejecución, binarios, versiones de kernel, grupos privilegiados, etc. Esta un poco relacionado con ataques a contraseñas por la busqueda de credenciales.
 
 #### Windows Privilege Escalation
-Pendiente por comentar 
+El anterior módulo era para linux ahora toca windows. Aprendes a cómo abusar de privilegios del usuario, grupos privilegiados, atacar el sistema, robar credencailes, etc. Por el tema de credenciales también esta relacionado con ataques a contraseñas pero más importante windows esta relacionado a directorio activo y protcolos como SMB, Winrm, RDP. Por lo tanto este módulo también es clave para directorio activo.
 
 #### Documentation & reporting
-Pendiente por comentar 
+Es el módulo más importante si vas a dar el certificado. Explica como hacer un reporte y como debe ser. Recordemos que en el CPTS evalúan principalmente tu reporte y un reporte malo va a hacer que pierdas el certificado ademas que un la entrega de uno malo a un cliente posiblemente ponga en duda tus capacidades o conocimientos.
 
 #### Attacking Enterprise Networks
-Pendiente por comentar 
+Este es un laboratorio muy grande, es algo similar a lo que puede ser un pro lab en el apartado de HTB labs, pero este esta enfocado en bastantes conocimientos aprendidos simulando un entorno empresarial muy vulnerable. El modulo en si es la resolución de ese mega laboratorio pero no es necesario mirar la resolución. Te hace aplicar bastante contenido de varios módulos como ataques a AD, DNS, webs, fuerza bruta, protocolos, fuzzing, pivoting, escalación de privilegios, etc. Es un modulo para afianzar todo ese conocimiento adquirido y aprender a aplicarlo todo junto.
