@@ -15,9 +15,8 @@ tokenCount: 860
 
 Las contraseñas en la actualidad son muy importantes por eso veamos un poco más a detalle como evitar contraseñas inseguras. Pero antes veamos como se almacenan las contraseñas.
 
-Las contraseñas no se almacenan en texto claro porque si un intruso logra robar las contraseñas puede usarla instantáneamente, no parece muy grave eso, puede ser la contraseña de una cuenta, tanto daño no va a hacer. Error muchos usuarios reusan su contraseña para varias cosas porque es más fácil para su día a día. 
-
-Actualmente las contraseñas se guardan como hashes, básicamente a la contraseña original se pasa por un proceso irreversible en el cual queda su “huella” conocida como hash. Esto permite que si un tercero tiene tu contraseña este no pueda tenerla en texto claro.
+Las contraseñas no se almacenan en texto claro porque si un intruso logra robar las contraseñas puede usarla instantáneamente, no parece muy grave eso, puede ser la contraseña de una cuenta inofensiva o secundaria, tanto daño no puede hacer. Error! muchos usuarios reusan su contraseña en varias cosas porque es más fácil para su día a día que recordar varias contraseñas distintas.
+Para evitar tener las contraseñas en texto claro por lo general las contraseñas se guardan como hashes, básicamente a la contraseña original se pasa por un proceso irreversible en el cual queda su “huella” conocida como hash. Esto permite que si un tercero tiene tu "contraseña" almacenada este no pueda tenerla en texto claro para usarla.
 
 “Crackeado” de hashes. Bueno como el proceso de hasheado es irreversible no significa que el hash sea inútil se puede usar igualmente para obtener la contraseña original pero requiere mucho más esfuerzo. Básicamente se utiliza fuerza bruta que sería probar contraseñas una por una hasta que encuentre la contraseña correcta.
 
