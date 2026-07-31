@@ -79,6 +79,6 @@ Se puede apreciar que la contraseña larga es más segura porque no tiene relaci
 #### Conclusión:
 
 Los usuarios pueden ser muy creativos a la hora de completar los requisitos de una contraseña y que no sea segura. Las políticas de contraseñas ayudan a evitar contraseñas débiles pero no lo solucionan. 
-Los gestores de contraseñas y otras herramientas pueden ser una buena solución para evitar contraseñas débiles. Nota: si la contraseña de un gestor de contraseñas en local como keepass es muy débil se puede crackear y obtener las contraseñas guardadas y perder las contraseñas puede causar situaciones como esta:
+Los gestores de contraseñas y otras herramientas pueden ser una buena solución para evitar contraseñas débiles. Nota: si la contraseña de un gestor de contraseñas en local como keepass es muy débil se puede crackear y obtener las contraseñas guardadas. Perder las contraseñas en local puede causar situaciones como esta:
 
 https://youtu.be/5HdnrLtfbrI?si=ESMiBKs5ij9SY2ll&t=137
