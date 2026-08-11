@@ -10,11 +10,11 @@ heroImage: '../../../assets/blog/default-covers/cyber-03.webp'
 
 Las maquinas de esta sección de HTB son para aprender conceptos básicos y ser amigables con los nuevos usuarios
 
-#Meow
+# Meow
 
 - [Resolución de la maquina Meow (PDF)](https://github.com/PelaoBrazzers/PeladoPenetrationStuff/blob/main/SpanishWritups/Starting_Point/Meow.pdf)
 
-#Fawn
+# Fawn
 
 Bienvenido a la segunda maquina introductoria de HTB. Si eres nuevo comprueba que estés dentro de la red de HTB.
 

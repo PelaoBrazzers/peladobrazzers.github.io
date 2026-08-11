@@ -56,6 +56,7 @@ La flag `-T` es para designar la velocidad del escaneo
 - `-T 3` / `-T normal`
 - `-T 4` / `-T aggressive`
 - `-T 5` / `-T insane`
+
 **Para personalizar aun más el escaneo:**
 Con que frecuencia (`--min-parallelism <numero>`), 
 En cuanto es el timeout  (`--max-rtt-timeout <tiempo>`) 
